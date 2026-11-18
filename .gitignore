@@ -1,0 +1,28 @@
+# Secrets
+.env
+kaggle.json
+# Data (Kaggle data must not be committed - see LICENSE_DATASET.md)
+data/raw/*
+data/processed/*
+data/simulated/*
+data/sample/*
+!data/**/.gitkeep
+# Generated outputs
+reports/*
+!reports/.gitkeep
+logs/*
+!logs/.gitkeep
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+.coverage
+htmlcov/
+# Airflow / Superset local state
+airflow.db
+airflow-webserver.pid
+superset.db
